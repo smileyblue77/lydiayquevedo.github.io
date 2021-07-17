@@ -45,6 +45,7 @@
 
     img{
         width: 10em;
+        overflow: hidden;
     }
 
     .question{
@@ -53,12 +54,14 @@
         margin-top: 3em;
         margin-left: 3em;
         text-align: center;
+        
     }
 
     .answer-choice {
         margin: 5px;
         text-align: center;
         border: 2px black;
+        overflow: hidden;
     }
 
 
@@ -475,6 +478,7 @@
         function restartQuiz(){
         result.innerHTML = "You are...";
         resultImage.innerHTML = "";
+        description.innerHTML = "";
         questionCount = 0;
         greenScore = 0;
         pinkScore = 0 ;
