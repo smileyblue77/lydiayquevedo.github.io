@@ -1,4 +1,4 @@
-# Personal Website Starter Code
+# smileyblue77's Personal Website
 
 Welcome to my webpage! This is a work-in-progress place for me to show off my favorite projects. 
 
