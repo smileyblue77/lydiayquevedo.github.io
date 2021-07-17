@@ -1,0 +1,80 @@
+
+/* --------------------- */
+/* --- STYLE NAV BAR --- */
+/* --------------------- */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(145, 157, 197);
+    position: fixed;
+    /*Makes the sidebar take up the whole left side*/
+    height: 100%;
+    overflow: auto;
+    transition-duration: 100ms;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    /*Removes underline*/
+    text-decoration: none;
+  }
+  
+  /*Active or current link*/
+  .sidebar a.active{
+    background-color:rgb(122, 150, 240);
+  }
+  
+  /*Hover effect*/
+  .sidebar a:hover{
+    background-color: rgb(63, 99, 219);
+    color: white;
+  }
+  
+  
+  /* --------------------- */
+  /* --- STYLE CONTENT --- */
+  /* --------------------- */
+  
+  div.content{
+    margin-left: 200px;
+    padding: 10px 16px;
+    height: 100%;
+    width: 70%;
+  }
+  
+  /* STYLE SECTIONING TAGS */
+  body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+    background-color: rgb(169, 187, 245);
+    margin: 10px;
+  }
+  
+  
+  /* STYLE TEXT */
+  
+  h1 {
+    display: block;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: navy;
+  }
+  
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  /* STYLE IMAGES */
+  
+  .center{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+  }
+  
