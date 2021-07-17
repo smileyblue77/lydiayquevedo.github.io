@@ -1,6 +1,6 @@
 # Personal Website Starter Code
 
-This is a place for you to start building your personal website!
+Welcome to my webpage! This is a work-in-progress place for me to show off my favorite projects. 
 
 ### Project Requirements
 Your project should:
@@ -21,8 +21,8 @@ You can extend your project further by:
 
 
 ### Image Attributions
-*Tell us where you found the image you are using! Make sure it is in the public domain, has a license that allows you to use it, or is one you took on your own. Check out [archive.org](https://archive.org/), [Pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/), or [Burst](https://burst.shopify.com/) for free, uncopyrighted images.*
-- 
+*Coming soon! Most pictures via [Pixabay](https://pixabay.com/) under Creative Commons licenses.*
+
 
 ---
 
