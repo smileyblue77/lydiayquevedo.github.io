@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fugaz+One&family=PT+Sans&family=Sacramento&family=Leckerli+One&family=Indie+Flower&display=swap" rel="stylesheet">
   </head>
   <style>
+    /* Style the body */
     body{
         font-family: 'Indie Flower', 'PT Sans', sans-serif;
         font-size: 20px;
@@ -27,7 +28,7 @@
         color: black;
     }
 
-        /* Style title text */
+    /* Style title text */
     h1 {
         font-family: 'Leckerli One', cursive;
         font-size: 70px;
@@ -35,34 +36,34 @@
         padding: 10%;
     }
 
-        /* Style questions */
+    /* Style questions */
     h2 {
         font-family: 'Indie Flower', sans-serif;
         font-size: 30px;
         text-align: center;
     }
 
-        img{
+    img{
         width: 10em;
-        }
+    }
 
-        .question{
+    .question{
         display: flex;
         flex-direction: row;
         margin-top: 3em;
         margin-left: 3em;
         text-align: center;
-        }
+    }
 
-        .answer-choice {
+    .answer-choice {
         margin: 5px;
         text-align: center;
         border: 2px black;
-        }
+    }
 
 
-        /* Style buttons */
-        button{
+    /* Style buttons */
+    button{
         background-color: rgb(83, 180, 240);
         color: white;
         padding: 10px;
@@ -70,30 +71,30 @@
         border-radius: 4px;
         border: 2px;
         transition-duration: 0.4s;
-        }
+    }
 
-        button:hover{
+     button:hover{
         background-color: rgb(173, 44, 109);
         border: 2px solid rgb(235, 164, 229);
         color: white;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
-        }
+    }
 
-        button:disabled{
+    button:disabled{
         background-color: white;
         border: 2px solid lightskyblue;
         color: gray;
-        }
+    }
 
-        #giveResult{
+    #giveResult{
         margin-top: 20px;
-        }
+    }
 
-        #restart{
+    #restart{
         margin-bottom: 100px;
 
-        }
+    }
 
   </style>
 
@@ -108,25 +109,25 @@
       <h2>Pick something small that annoys you:</h2>
       <div class = "question">
         <div class = "answer-choice">
-          <img src = "assets/walk.jpg" alt = "">
+          <img src = "assets/walk.jpg" alt = "Two people and a dog on a sidewalk">
           <br>
           <button id = "q1a1">Slow walkers</button>
         </div>
 
         <div class = "answer-choice">
-          <img src = "assets/chewing.jpg" alt = "">
+          <img src = "assets/chewing.jpg" alt = "A man eating a sugary donut">
           <br>
           <button id = "q1a2">Loud chewing/drinking</button>
         </div>
 
         <div class = "answer-choice">
-          <img src = "assets/driving.jpg" alt = "">
+          <img src = "assets/driving.jpg" alt = "A man driving in a car at sunset">
           <br>
           <button id = "q1a3">Not using the turn signal</button>
         </div>
 
         <div class = "answer-choice">
-          <img src = "assets/furious.jpg" alt = "">
+          <img src = "assets/furious.jpg" alt = "A frustrated-looking woman">
           <br>
           <button id = "q1a4">Being told to "calm down"</button>
         </div>
@@ -135,7 +136,7 @@
       <h2>Pick something small that makes you incredibly happy:</h2>
       <div class = "question">
         <div class = "answer-choice">
-          <img src = "assets/rain.jpg" alt = "">
+          <img src = "assets/rain.jpg" alt = "Raindrops on a window pane">
           <br>
           <button id = "q2a1">The smell of rain</button>
         </div>
@@ -147,7 +148,7 @@
         </div>   
 
         <div class = "answer-choice">
-          <img src = "assets/alarm.jpg" alt = "">
+          <img src = "assets/alarm.jpg" alt = "A black-and-white image of an alarm clock">
           <br>
           <button id = "q2a3">Waking up before your alarm</button>
         </div>
