@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pigment Personality Quiz</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="/style.css" 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fugaz+One&family=PT+Sans&family=Sacramento&family=Leckerli+One&family=Indie+Flower&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    body{
+        font-family: 'Indie Flower', 'PT Sans', sans-serif;
+        font-size: 20px;
+        background-image:url("https://live.staticflickr.com/2580/3713899254_9ef245d0dc_b.jpg");
+        background-size: cover;
+        margin: auto;
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        display: block;
+        text-align: center;
+        color: black;
+    }
+
+        /* Style title text */
+    h1 {
+        font-family: 'Leckerli One', cursive;
+        font-size: 70px;
+        background-image: url("https://cdn.pixabay.com/photo/2017/05/18/10/27/watercolour-2323195_1280.jpg");
+        padding: 10%;
+    }
+
+        /* Style questions */
+    h2 {
+        font-family: 'Indie Flower', sans-serif;
+        font-size: 30px;
+        text-align: center;
+    }
+
+        img{
+        width: 10em;
+        }
+
+        .question{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3em;
+        margin-left: 3em;
+        text-align: center;
+        }
+
+        .answer-choice {
+        margin: 5px;
+        text-align: center;
+        border: 2px black;
+        }
+
+
+        /* Style buttons */
+        button{
+        background-color: rgb(83, 180, 240);
+        color: white;
+        padding: 10px;
+        font-family: 'PT Sans';
+        border-radius: 4px;
+        border: 2px;
+        transition-duration: 0.4s;
+        }
+
+        button:hover{
+        background-color: rgb(173, 44, 109);
+        border: 2px solid rgb(235, 164, 229);
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+        }
+
+        button:disabled{
+        background-color: white;
+        border: 2px solid lightskyblue;
+        color: gray;
+        }
+
+        #giveResult{
+        margin-top: 20px;
+        }
+
+        #restart{
+        margin-bottom: 100px;
+
+        }
+
+  </style>
+
+  <body>
+
+    <header>
+        <h1>Pigment Personality</h1>
+        <p>Answer these random questions and I'll tell you what watercolor paint you are.</p>
+    </header>
+
+    <main>
+      <h2>Pick something small that annoys you:</h2>
+      <div class = "question">
+        <div class = "answer-choice">
+          <img src = "assets/walk.jpg" alt = "">
+          <br>
+          <button id = "q1a1">Slow walkers</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/chewing.jpg" alt = "">
+          <br>
+          <button id = "q1a2">Loud chewing/drinking</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/driving.jpg" alt = "">
+          <br>
+          <button id = "q1a3">Not using the turn signal</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/furious.jpg" alt = "">
+          <br>
+          <button id = "q1a4">Being told to "calm down"</button>
+        </div>
+      </div>
+
+      <h2>Pick something small that makes you incredibly happy:</h2>
+      <div class = "question">
+        <div class = "answer-choice">
+          <img src = "assets/rain.jpg" alt = "">
+          <br>
+          <button id = "q2a1">The smell of rain</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/birdsong.jpg" alt = "A European robin singing its little heart out">
+          <br>
+          <button id = "q2a2">The first birdsongs of spring</button>
+        </div>   
+
+        <div class = "answer-choice">
+          <img src = "assets/alarm.jpg" alt = "">
+          <br>
+          <button id = "q2a3">Waking up before your alarm</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/kiss.jpg" alt = "">
+          <br>
+          <button id = "q2a4">Kisses from a dog/cat</button>
+        </div>
+      </div>
+      
+      <h2>Pick a pastry to eat:</h2>
+      <div class = "question">
+        <div class = "answer-choice">
+          <img src = "assets/croissant.jpg" alt = "A pile of freshly baked croissants">
+          <br>
+          <button id = "q3a1">A buttery croissant</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/danish.jpg" alt = "Two cheese danishes on a plate with lemon and berry compote">
+          <br>
+          <button id = "q3a2">A smooth cheese danish</button>
+        </div> 
+
+        <div class = "answer-choice">
+          <img src = "assets/eclair.jpg" alt = "Two crispy eclairs on a black plate">
+          <br>
+          <button id = "q3a3">A crispy eclair</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/rolls.jpg" alt = "A pile of iced cinnamon buns">
+          <br>
+          <button id = "q3a4">A fluffy cinnamon bun</button>
+        </div>
+      </div>
+
+      <h2>What do you want to be known for?</h2>
+      <div class = "question">
+        <div class = "answer-choice">
+          <img src = "assets/kind.jpg" alt = "A lightboard with the message \'HAVE A GREAT DAY :)\'">
+          <br>
+          <button id = "q4a1">Being kind</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/smart.jpg" alt = "A line of lightbulbs with one lit up">
+          <br>
+          <button id = "q4a2">Being smart</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/funny.jpg" alt = "A man and a woman laughing together">
+          <br>
+          <button id = "q4a3">Being funny</button>
+        </div>
+
+        <div class = "answer-choice">
+          <img src = "assets/brave.jpg" alt = "A woman jumping across a canyon">
+          <br>
+          <button id = "q4a4">Being brave</button>
+        </div>
+      </div>
+
+      <br>
+      <button id = "giveResult">Show me my results already!</button>
+      <h2 id = "result">You are...</h2>
+      <div id = "resultImage"></div>
+      <p id = "description"></p>
+      <br><br>
+      <button id = "restart">I wanna try again!</button>  
+    </main>
+
+    
+
+    <script>
+        // Store question count
+        var questionCount = 0;
+
+        // Set answer scores
+        var greenScore = 0;
+        var pinkScore = 0;
+        var blueScore = 0;
+        var yellowScore = 0;
+
+        // Retrieve and store HTML elements using the DOM
+        var result = document.getElementById("result");
+        var giveResult = document.getElementById("giveResult");
+        var resultImage = document.getElementById("resultImage");
+        var description = document.getElementById("description");
+
+        var restart = document.getElementById("restart");
+
+        var q1a1 = document.getElementById("q1a1");
+        var q1a2 = document.getElementById("q1a2");
+        var q1a3 = document.getElementById("q1a3");
+        var q1a4 = document.getElementById("q1a4");
+
+        var q2a1 = document.getElementById("q2a1");
+        var q2a2 = document.getElementById("q2a2");
+        var q2a3 = document.getElementById("q2a3");
+        var q2a4 = document.getElementById("q2a4");
+
+        var q3a1 = document.getElementById("q3a1");
+        var q3a2 = document.getElementById("q3a2");
+        var q3a3 = document.getElementById("q3a3");
+        var q3a4 = document.getElementById("q3a4");
+
+        var q4a1 = document.getElementById("q4a1");
+        var q4a2 = document.getElementById("q4a2");
+        var q4a4 = document.getElementById("q4a3")
+        var q4a4 = document.getElementById("q4a4");
+
+
+        // Listen for clicks on answers and track scores
+        q1a1.addEventListener("click", green);
+        q1a2.addEventListener("click", pink);
+        q1a3.addEventListener("click", blue);
+        q1a4.addEventListener("click", yellow);
+
+        q2a1.addEventListener("click", pink);
+        q2a2.addEventListener("click", green);
+        q2a3.addEventListener("click", blue);
+        q2a4.addEventListener("click", yellow);
+
+        q3a1.addEventListener("click", yellow);
+        q3a2.addEventListener("click", blue);
+        q3a3.addEventListener("click", green);
+        q3a4.addEventListener("click", pink);
+
+        q4a1.addEventListener("click", pink);
+        q4a2.addEventListener("click", blue);
+        q4a3.addEventListener("click", green);
+        q4a4.addEventListener("click", yellow);
+
+
+        // Listen for result click
+        giveResult.addEventListener("click", updateResult);
+
+        //Listen for restart click
+        restart.addEventListener("click", restartQuiz);
+
+        // Track green scores and check if complete
+        function green(){
+        greenScore += 1;
+        questionCount += 1;
+
+        if (questionCount == 4){
+            console.log("The quiz is done!")
+            updateResult();
+
+
+        }
+
+        }
+        // Track pink scores and check if complete
+        function pink(btn){
+        pinkScore += 1;
+        questionCount += 1;
+
+        console.log("questionCount = " + questionCount + "\t" + "pinkScore = " + pinkScore)
+
+        if (questionCount == 4){
+            console.log("The quiz is done!")
+            updateResult();
+        }
+        }
+        // Track blue scores and check if complete
+        function blue(btn){
+        blueScore += 1;
+        questionCount += 1;
+
+        console.log("questionCount = " + questionCount + "\t" + "blueScore = " + blueScore)
+
+        if (questionCount == 4){
+            console.log("The quiz is done!")
+            updateResult();
+        }
+        }
+        // Track yellow scores and check if complete
+        function yellow(btn) {
+        yellowScore += 1;
+        questionCount += 1;
+
+        console.log("questionCount = " + questionCount + "\t" + "yellowScore = " + yellowScore)
+
+        if (questionCount == 4){
+            console.log("The quiz is done!")
+        }
+        }
+
+        // Update quiz result
+        function updateResult(){
+        if (greenScore >= 2){
+            result.innerHTML = "You are Sap Green!";
+            console.log("You are Sap Green!");
+
+            var greenEl = document.createElement("img");
+            greenEl.src = "assets/green-swatch.png";
+            greenEl.alt = "A swatch of green paint";
+            greenEl.style.width = "200px";
+            resultImage.appendChild(greenEl);
+            description.immerHTML = "You're a positive, chill person with a deep fondness for the natural world. You know what you want and aren't afraid to go get it. Above all, your family and friends love you for your sparkling personality and lightheartedness.";
+
+        } else if (pinkScore >= 2){
+            result.innerHTML = "You are Quinacridone Rose!";
+            console.log("You are Quinacridone Rose!");
+
+            var pinkEl = document.createElement("img");
+            pinkEl.src = "assets/pink-swatch.png";
+            pinkEl.alt = "A swatch of Quinacridone Rose watercolor paint"
+            pinkEl.style.width = "200px";
+            resultImage.appendChild(pinkEl);
+            description.innerHTML = "You're a shy, gentle person by nature, but nobody wants to be on your bad side! You have a lot of spunk and like to dream big. Above all, your friends and family love you for your honesty and warmth.";
+
+        } else if (blueScore >= 2){
+            result.innerHTML = "You are Pthalo Blue!";
+            console.log("You are Pthalo Blue!");
+
+            var blueEl = document.createElement("img");
+            blueEl.src = "assets/blue-swatch.png";
+            blueEl.alt = "A swatch of Pthalo Blue watercolor paint"
+            blueEl.style.width = "200px";
+            resultImage.appendChild(blueEl);
+            description.innerHTML = "You're a calm, generous person who would rather think than speak. You have a powerful intuition and complicated ideas fuel you instead of scaring you off. Above all, your family and friends love you for your gift to dream and share these visions with others.";
+
+        } else if (yellowScore >= 2){
+            result.innerHTML = "You are Hansa Yellow!";
+            console.log("You are Hansa Yellow!");
+
+            var yellowEl = document.createElement("img");
+            yellowEl.src = "assets/yellow-swatch.png";
+            yellowEl.alt = "A swatch of Hansa Yellow watercolor paint"
+            yellowEl.style.width = "200px";
+            resultImage.appendChild(yellowEl);
+            description.innerHTML = "You're a joyful, passionate person with a powerful sense of loyalty and justice. Above all, your family and friends love you for the way you light up a room and make everyone feel welcomed.";
+
+        } else {
+            result.innerHTML = "You are Alzirian Crimson!";
+            console.log("You are Alzirian Crimson!");
+
+            var redEl = document.createElement("img");
+            redEl.src = "assets/red-swatch.png";
+            redEl.alt = "A swatch of Alzirian Crimson watercolor paint";
+            redEl.style.width = "200px";
+            resultImage.appendChild(redEl);
+            description.innerHTML = "You're a strong-minded, determined individual who believes in enjoying the finer things in life. Above all, your family and friends love you for your strength and thoughtfulness.";
+
+        }
+
+        }
+
+        // Track clicks and disable buttons as you go
+        q1a1.addEventListener("click", disableQ1);
+        q1a2.addEventListener("click", disableQ1);
+        q1a3.addEventListener("click", disableQ1);
+        q1a4.addEventListener("click", disableQ1);
+
+        q2a1.addEventListener("click", disableQ2);
+        q2a2.addEventListener("click", disableQ2);
+        q2a3.addEventListener("click", disableQ2);
+        q2a4.addEventListener("click", disableQ2);
+
+        q3a1.addEventListener("click", disableQ3);
+        q3a2.addEventListener("click", disableQ3);
+        q3a3.addEventListener("click", disableQ3);
+        q3a4.addEventListener("click", disableQ3);
+
+        q4a1.addEventListener("click", disableQ4);
+        q4a2.addEventListener("click", disableQ4);
+        q4a3.addEventListener("click", disableQ4);
+        q4a4.addEventListener("click", disableQ4);
+
+        // Disable buttons
+        function disableQ1() {
+        q1a1.disabled = true;
+        q1a2.disabled = true;
+        q1a3.disabled = true;
+        q1a4.disabled = true;  
+        }
+
+        function disableQ2() {
+        q2a1.disabled = true;
+        q2a2.disabled = true;
+        q2a3.disabled = true;
+        q2a4.disabled = true;  
+        }
+
+        function disableQ3() {
+        q3a1.disabled = true;
+        q3a2.disabled = true;
+        q3a3.disabled = true;
+        q3a4.disabled = true;  
+        }
+
+        function disableQ4() {
+        q4a1.disabled = true;
+        q4a2.disabled = true;
+        q4a3.disabled = true;
+        q4a4.disabled = true;  
+        }
+
+        function enableQs(){
+        q1a1.disabled = false;
+        q1a2.disabled = false;
+        q1a3.disabled = false;
+        q1a4.disabled = false;
+        q2a1.disabled = false;
+        q2a2.disabled = false;
+        q2a3.disabled = false;
+        q2a4.disabled = false;
+        q3a1.disabled = false;
+        q3a2.disabled = false;
+        q3a3.disabled = false;
+        q3a4.disabled = false;
+        q4a1.disabled = false;
+        q4a2.disabled = false;
+        q4a3.disabled = false;
+        q4a4.disabled = false;            
+        }
+
+        // Reset the quiz
+        function restartQuiz(){
+        result.innerHTML = "You are...";
+        resultImage.innerHTML = "";
+        questionCount = 0;
+        greenScore = 0;
+        pinkScore = 0 ;
+        blueScore = 0;
+        yellowScore = 0;
+        console.log("questionCount = " + questionCount + "\t" + "greenScore = " + greenScore + "\t" + "pinkScore = " + pinkScore + "\t" + "blueScore = " +blueScore + "\t" + "yellowScore = " + yellowScore);
+        enableQs();
+        }
+
+    </script>
+
+
+  </body>
+
+
+</html>
