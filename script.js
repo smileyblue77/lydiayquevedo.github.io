@@ -12,5 +12,5 @@ function displaySecret(){
   var adjective = document.getElementById("adjective").value;
   var noun = document.getElementById("noun").value;
 
-  displayName.innerHTML = name + ", did you know that when fish sleep, their dreams become " + adjective + " " + noun + "? Shhh, it's a secret!";
+  displayName.innerHTML = name + ", did you know that when fish sleep, their dreams become " + adjective + " " + noun + "s? Shhh, it's a secret!";
 }
