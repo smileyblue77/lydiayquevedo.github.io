@@ -15,17 +15,18 @@
   <style>
     /* Style the body */
     body{
-        font-family: 'Indie Flower', 'PT Sans', sans-serif;
-        font-size: 20px;
-        background-image:url("https://live.staticflickr.com/2580/3713899254_9ef245d0dc_b.jpg");
-        background-size: cover;
-        margin: auto;
-        width: 50%;
-        height: 100%;
-        padding: 20px;
-        display: block;
-        text-align: center;
-        color: black;
+      font-family: 'Indie Flower', 'PT Sans', sans-serif;
+      font-size: 20px;
+      background-image:url("https://live.staticflickr.com/2580/3713899254_9ef245d0dc_b.jpg");
+      background-size: cover;
+      margin: auto;
+      width: 50%;
+      height: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     /* Style title text */
@@ -34,6 +35,7 @@
         font-size: 70px;
         background-image: url("https://cdn.pixabay.com/photo/2017/05/18/10/27/watercolour-2323195_1280.jpg");
         padding: 10%;
+        color: black;
     }
 
     /* Style questions */
@@ -45,21 +47,20 @@
 
     img{
         width: 10em;
-        overflow: hidden;
     }
 
     .question{
         display: flex;
         flex-direction: row;
-        margin-top: 3em;
-        margin-left: 3em;
+        align-items: center;
         text-align: center;
+        width: 100%;
         
     }
 
     .answer-choice {
-        margin: 5px;
-        text-align: center;
+        padding: 20px;
+        flex-basis: 100%;
         border: 2px black;
         overflow: hidden;
     }
@@ -99,13 +100,18 @@
 
     }
 
+    /* Style paragraphs */
+    p{
+      width: 60%;
+    }
+
   </style>
 
   <body>
 
     <header>
         <h1>Pigment Personality</h1>
-        <p>Answer these random questions and I'll tell you what watercolor paint you are.</p>
+        <p>Answer these random questions and I'll tell you which watercolor paint you are.</p>
     </header>
 
     <main>
